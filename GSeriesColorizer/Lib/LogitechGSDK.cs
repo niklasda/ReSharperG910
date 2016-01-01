@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
-namespace LogitechColorizer.Lib
+namespace GSeriesColorizer.Lib
 {
-
-    public enum KeyboardNames
+    internal enum KeyboardNames
     {
         ESC = 0x01,
         F1 = 0x3b,
@@ -114,7 +111,7 @@ namespace LogitechColorizer.Lib
 
     };
 
-    public class LogitechGSDK
+    internal class LogitechGSDK
     {
         //LED SDK
         private const int LOGI_DEVICETYPE_MONOCHROME_ORD = 0;

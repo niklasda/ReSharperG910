@@ -7,11 +7,12 @@
     <ProjectGuid>{CE21EA56-73D6-4CDA-8A3E-49769EDCA7B1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LogitechColorizer</RootNamespace>
-    <AssemblyName>LogitechColorizer</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>GSeriesColorizerCmd</RootNamespace>
+    <AssemblyName>GSeriesColorizerCmd</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lib\LogitechGSDK.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -52,10 +52,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LogitechLedEnginesWrapper.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <ProjectReference Include="..\GSeriesColorizer\GSeriesColorizer.csproj">
+      <Project>{68193a7c-d2b7-45de-8bb7-6cc4d2712d57}</Project>
+      <Name>GSeriesColorizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSeriesColorizerReSharperPlugin\GSeriesColorizerReSharperPlugin.csproj">
+      <Project>{68b634ad-31f3-4441-a798-c04d218aed65}</Project>
+      <Name>GSeriesColorizerReSharperPlugin</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>GSeriesColorizer</id>
+    <version>1.0.0</version>
+    <title>Logitech GSeries Colorizer</title>
+    <authors>Niklas Dahlman, Dahlman Labs</authors>
+    <owners>Niklas Dahlman, Dahlman Labs</owners>
+    <description>Indicate Build outcome by flashing Logitech G-Series Mouse and keyboard gree or red.</description>
+    <language>en-US</language>
+    <copyright>Copyright ©2015-2016 Dahlman Labs</copyright>
+    <tags/>
+    <releaseNotes/>
+    <projectUrl>http://dahlman.biz/</projectUrl>
+    <licenseUrl>http://github.com/niklasda/</licenseUrl>
+	<dependencies/>
+  </metadata>
+  <files>
+    <file src="bin\Release\GSeriesColorizer.dll" target="DotFiles\" />
+    <file src="bin\Release\GSeriesColorizerReSharperPlugin.dll" target="settings\" />
+  </files>
+</package>
